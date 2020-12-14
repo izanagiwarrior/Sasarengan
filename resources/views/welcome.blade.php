@@ -22,7 +22,6 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
-            /* background-color: #000; */
             color: #636b6f;
             font-family: 'Nunito', sans-serif;
             font-weight: 200;
@@ -93,14 +92,6 @@
                 @endauth
             </div>
         @endif
-
-        {{-- <div class="content"> --}}
-            {{-- <div class="title m-b-md">
-            </div> --}}
-            {{-- @yield('name') --}}
-            {{-- <div class="links">
-            </div> --}}
-            {{-- </div> --}}
     </div>
 </body>
 

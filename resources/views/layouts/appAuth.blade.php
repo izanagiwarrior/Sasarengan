@@ -60,19 +60,6 @@
                     <ul class="navbar-nav mr-auto">
                     </ul>
 
-                    <!-- Center Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto mx-auto text-center">
-                        <li class="nav-item active">
-                            <a class="nav-link text-dark font-weight-bold" href={{ route('home') }}>HOME</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-dark font-weight-bold" href={{ route('product') }}>PRODUCT</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-dark font-weight-bold" href={{ route('history') }}>HISTORY</a>
-                        </li>
-                    </ul>
-
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
