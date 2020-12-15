@@ -28,7 +28,7 @@
                                     <div class="col-4">
                                         <div class="card border-0 mb-4 mt-4 mx-auto" style="width: 18rem;">
                                             <img class="card-img-top" src="{{ asset('public/' . $product->img_path) }}" height="225">
-                                            <h3 class="card-title text-center"><b>{{ $product->name }}</b></h3>
+                                            <h3 class="card-title text-center mt-4"><b>{{ $product->name }}</b></h3>
                                             <p class="card-text">Sinopsis : </p>
                                             <p class="card-text">
                                                 {{ Illuminate\Support\Str::limit($product->sinopsis, 200) }}

@@ -37,7 +37,7 @@
                     <tr class="text-center">
                         <td class="align-middle">{{ $i += 1 }}</td>
                         <td class="align-middle">{{ $product->name }}</td>
-                        <td class="align-middle">{{ $product->price }}</td>
+                        <td class="align-middle">Rp. {{ $product->price }}</td>
                         <td class="align-middle">
                             <div class="btn-group">
                                 <button href="{{ route('content.updateEvent', $product->id) }}" class="btn btn-primary mr-4 button-size py-0 mt-3">Edit</button>

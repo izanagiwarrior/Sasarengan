@@ -73,7 +73,7 @@
 
     </style>
 
-    <link rel="icon" href="https://i.pinimg.com/originals/93/7c/ae/937cae3efeb1484526a5bb6d4d8bdb3a.jpg"
+    <link rel="icon" href="https://storeximi.online/wp-content/uploads/2020/12/Logo-1.png"
         type="image/x-icon">
 </head>
 
