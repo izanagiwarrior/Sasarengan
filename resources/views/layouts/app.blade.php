@@ -69,6 +69,15 @@
                             <a class="nav-link text-dark font-weight-bold" href={{ route('product') }}>PRODUCT</a>
                         </li>
                         <li class="nav-item active">
+                            <a class="nav-link text-dark font-weight-bold" href={{ route('trytowrite') }}>TRY TO WRITE</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-dark font-weight-bold" href={{ route('about') }}>ABOUT</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link text-dark font-weight-bold" href={{ route('terms') }}>TERMS</a>
+                        </li>
+                        <li class="nav-item active">
                             <a class="nav-link text-dark font-weight-bold" href={{ route('history') }}>HISTORY</a>
                         </li>
                     </ul>

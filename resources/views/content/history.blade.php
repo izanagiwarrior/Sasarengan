@@ -10,7 +10,7 @@
 
     @elseif (count($orders) > 0)
 
-        {{ $i = 0 }}
+        
         <h1 class="text-center">History</h1>
         <br><br>
         <div class="container d-flex justify-content-center text-center">

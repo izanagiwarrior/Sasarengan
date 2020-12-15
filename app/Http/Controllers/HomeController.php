@@ -25,16 +25,39 @@ class HomeController extends Controller
      */
     public function index()
     {   
+        $i = 0;
         $products = Products::all();
         
-        return view('content.order', compact('products'));
+        return view('content.order', compact('products','i'));
+    }
+
+    public function trytowrite()
+    {   
+        $products = Products::all();
+        
+        return view('content.trytowrite', compact('products'));
+    }
+
+    public function terms()
+    {   
+        $products = Products::all();
+        
+        return view('content.terms', compact('products'));
+    }
+
+    public function about()
+    {   
+        $products = Products::all();
+        
+        return view('content.about', compact('products'));
     }
 
     public function product()
     {
         $products = Products::all();
+        $i = 0;
 
-        return view('content.product', compact('products'));
+        return view('content.product', compact('products','i'));
     }
 
     public function add()
@@ -143,7 +166,8 @@ class HomeController extends Controller
     {
         $orders = Orders::all();
         $products = Products::all();
+        $i = 0;
 
-        return view('content.history', compact('orders'), compact('products'));
+        return view('content.history', compact('orders','products','i'));
     }
 }

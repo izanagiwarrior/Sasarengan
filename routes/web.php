@@ -13,11 +13,18 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Auth::routes();
 
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+Route::get('/trytowrite', [HomeController::class, 'trytowrite'])->name('trytowrite');
+
+Route::get('/terms', [HomeController::class, 'terms'])->name('terms');
+
+Route::get('/about', [HomeController::class, 'about'])->name('about');
 
 Route::get('/product', [HomeController::class, 'product'])->name('product');
 
