@@ -34,6 +34,19 @@
 
         }
 
+        body {
+                background: url(images/bg.png) no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 200;
+                height: 100vh;
+                margin: 0;
+            }
+
     </style>
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -44,7 +57,7 @@
 
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm" style="opacity: 80%">
             <div class="container">
                 <a class="navbar-brand" href="{{ route('home') }}">
                     Sasarengan
