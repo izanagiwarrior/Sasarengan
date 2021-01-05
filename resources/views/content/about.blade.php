@@ -1,18 +1,82 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-12 my-2">
-            <h3>About Us </h3>
-        </div>
-        <div class="col-12 bg-white card-body">
-            <h4>Hi, We're Sasarengan !</h4>
-            <p>
-                The most use platform for reading your favorite books!
-                we hope give you many experience over books!
-            </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 my-2">
+                <h1 class="text-center text-white">About Us</h1>
+            </div>
+            <div class="col-12 bg-white card-body">
+                <h4>Hi, We're Sasarengan !</h4>
+                <p>
+                    The most use platform for reading your favorite books!
+                    we hope give you many experience over books!
+                </p>
+                <p>
+                    OUR TEAM :
+                </p>
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-6 mt-2">
+                            <img src="images/FAIZ.png" alt="" width="250px">
+                        </div>
+                        <div class="col-5 text-center">
+                            <img src="images/HAFIZH.png" alt="" width="250px">
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-6 mt-2 text-center">
+                            <p><b> Nama : M. Faiz Triputra </b></p>
+                            <p> NIM : 1202184138 </p>
+                            <p> Jabatan : Back-End Developer </p>
+                        </div>
+                        <div class="col-5 mt-2 text-center">
+                            <p><b> Nama : Muhammad Hafiz Hawarizmi </b></p>
+                            <p> NIM : 1202184147 </p>
+                            <p> Jabatan : Front-end Developer</p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <p>
+                                <img src="images/DEPI.png" alt="" width="250px">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-12">
+                            <p><b> Nama : Devi Permata Ningrum </b></p>
+                            <p> NIM : 1202184185 </p>
+                            <p> Jabatan : Project Manager <b>( LEADER )</b></p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-6 text-center">
+                            <p>
+                                <img src="images/DEDOT.png" alt="" width="250px">
+                            </p>
+                        </div>
+                        <div class="col-6 text-center">
+                            <p>
+                                <img src="images/MUTI.png" alt="" width="250px">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-6 text-center">
+                            <p><b> Nama : Dea Oktaviani </b></p>
+                            <p> NIM : 1202184175 </p>
+                            <p> Jabatan : System Analyst </p>
+                        </div>
+                        <div class="col-6 text-center">
+                            <p><b> Nama : Mutiara Natiqoh Purwanto </b></p>
+                            <p> NIM : 1202184116 </p>
+                            <p> Jabatan : System Analyst </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+    </div>
 @endsection

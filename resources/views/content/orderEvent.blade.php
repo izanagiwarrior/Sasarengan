@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.adminapp')
 
 @section('content')
     <h1 class="text-center">Input Product</h1>
@@ -29,14 +29,19 @@
             <textarea type="text" class="form-control" name="sinopsis" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
 
-        <div class="form-group">
+        {{-- <div class="form-group">
             <label for="exampleFormControlTextarea1">Bab 1</label>
             <textarea type="text" class="form-control" name="description" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
+        </div> --}}
 
         <div class="form-group">
             <label for="exampleFormControlFile1">Cover</label>
             <input type="file" name="img_path" class="form-control-file" id="exampleFormControlFile1">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlFile1">E-PDF</label>
+            <input type="file" name="pdf_path" class="form-control-file" id="exampleFormControlFile1">
         </div>
 
         <div class="form-group">

@@ -5,7 +5,7 @@
 }
 </style>
 
-@extends('layouts.app')
+@extends('layouts.adminapp')
 
 @section('content')
     @if (count($products) === 0)

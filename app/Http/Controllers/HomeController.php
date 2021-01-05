@@ -38,6 +38,13 @@ class HomeController extends Controller
         return view('content.trytowrite', compact('products'));
     }
 
+    public function trytoread()
+    {   
+        $products = Products::all();
+        
+        return view('content.trytoread', compact('products'));
+    }
+    
     public function terms()
     {   
         $products = Products::all();
@@ -79,14 +86,25 @@ class HomeController extends Controller
             $files->move($destinationPath, $profileImage);
         }
 
+        if ($files = $request->file('pdf_path')) {
+            $destinationPath = 'public/pdf/';
+            $file = $request->file('pdf_path');
+            // upload path         
+            $profilePDF = rand(21000, 40000) . "." .
+                $files->getClientOriginalExtension();
+            $pathPDF = $file->storeAs('pdf', $profilePDF);
+            $files->move($destinationPath, $profilePDF);
+        }
+
 
         $products = new Products();
         $products->name = $request->name;
         $products->author = $request->author;
         $products->price = $request->price;
         $products->sinopsis = $request->sinopsis;
-        $products->description = $request->description;
+        // $products->description = $request->description;
         $products->img_path = $pathImg;
+        $products->pdf_path = $pathPDF;
         $products->updated_at = '2016-12-06 06:56:01';
         $products->created_at = '2016-12-06 06:56:01';
         $products->save();
@@ -116,12 +134,23 @@ class HomeController extends Controller
             $files->move($destinationPath, $profileImage);
         }
 
+        if ($files = $request->file('pdf_path')) {
+            $destinationPath = 'public/pdf/';
+            $file = $request->file('pdf_path');
+            // upload path         
+            $profilePDF = rand(21000, 40000) . "." .
+                $files->getClientOriginalExtension();
+            $pathPDF = $file->storeAs('pdf', $profilePDF);
+            $files->move($destinationPath, $profilePDF);
+        }
+
         $products = Products::find($id);
         $products->name = $request->name;
         $products->price = $request->price;
-        $products->description = $request->description;
+        // $products->description = $request->description;
         $products->stock = $request->stock;
         $products->img_path = request()->$pathImg;
+        $products->pdf_path = request()->$pathPDF;
         $products->updated_at = '2016-12-06 06:56:01';
         $products->created_at = '2016-12-06 06:56:01';
         $products->save();

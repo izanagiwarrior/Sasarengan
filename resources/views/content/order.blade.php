@@ -14,7 +14,7 @@
 @section('content')
     @if (count($products) === 0)
         <div class="d-flex justify-content-center">
-            <p class="text-muted"> Sedang Maintanance !</p>
+            <p class="text-white"> Sedang Maintanance !</p>
         </div>
     @elseif (count($products) > 0)
 

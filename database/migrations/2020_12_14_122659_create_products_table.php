@@ -19,8 +19,9 @@ class CreateProductsTable extends Migration
             $table->string('author');
             $table->double('price');
             $table->text('sinopsis');
-            $table->text('description');
+            // $table->text('description');
             $table->string('img_path',255);
+            $table->string('pdf_path',255);
             $table->timestamp('created_at')->nullable()->default(null);
             $table->timestamp('updated_at')->nullable()->default(null);
         });

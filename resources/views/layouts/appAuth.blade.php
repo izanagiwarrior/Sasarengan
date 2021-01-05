@@ -51,7 +51,7 @@
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
-    <link rel="icon" href="https://storeximi.online/wp-content/uploads/2020/12/Logo-1.png"
+    <link rel="icon" href="images/LOGO.png"
     type="image/x-icon">
 </head>
 
