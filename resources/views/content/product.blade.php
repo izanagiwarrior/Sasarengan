@@ -18,12 +18,12 @@
 
     @elseif (count($products) > 0)
 
-        <h1 class="text-center">List Produk</h1>
+        <h1 class="text-center" data-aos="fade-out">List Produk</h1>
         <div class="container d-flex">
             <a href="orderEvent" class="btn btn-primary">Tambah Produk</a>
         </div>
         <br>
-        <div class="container d-flex justify-content-center">
+        <div class="container d-flex justify-content-center" data-aos="fade-out">
             <table class="table table-striped">
                 <tr class="bg-dark text-white text-center">
                     <th>#</th>
@@ -34,7 +34,7 @@
 
                 @foreach ($products as $index => $product)
 
-                    <tr class="text-center">
+                    <tr class="text-center"  data-aos="fade-out">
                         <td class="align-middle">{{ $i += 1 }}</td>
                         <td class="align-middle">{{ $product->name }}</td>
                         <td class="align-middle">Rp. {{ $product->price }}</td>

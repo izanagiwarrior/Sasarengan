@@ -11,9 +11,9 @@
     @elseif (count($orders) > 0)
 
         
-        <h1 class="text-center text-white">Feedback</h1>
+        <h1 class="text-center text-white"  data-aos="fade-out">Feedback</h1>
         <br><br>
-        <div class="container d-flex justify-content-center text-center">
+        <div class="container d-flex justify-content-center text-center"  data-aos="fade-out">
             <table class="table table-striped">
                 <tr class="bg-dark text-white">
                     <th>No</th>
